@@ -24,11 +24,11 @@ public class JwtUtil {
 
     // Extrai as claims do token JWT (informações adicionais do token)
     private Claims extractClaims(String token) {
-       return Jwts.parser() // Inicia o processo de parsing do token JWT
+        return Jwts.parser() // Inicia o processo de parsing do token JWT
                 .verifyWith(getSigningKey()) // Configura o parser para verificar a assinatura do token usando a chave de assinatura fornecida
                 .build() // Conclui a configuração do parser
                 .parseSignedClaims(token) // Faz o parsing do token e extrai as claims assinadas
-                .getPayload(); // Obtém o payload (corpo) do token, que contém as claims
+                .getPayload(); // Obtém o payload (corpo) do token, que contém as claims
 
     }
     // Extrai o email do usuário do token JWT
