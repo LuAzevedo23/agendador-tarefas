@@ -5,7 +5,6 @@ import com.luciene.agendadortarefas.business.dto.TarefasDTO;
 import com.luciene.agendadortarefas.business.dto.UsuarioDTO;
 import com.luciene.agendadortarefas.infrastructure.client.UsuarioClient;
 import com.luciene.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
-import com.luciene.agendadortarefas.infrastructure.repository.TarefasRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
